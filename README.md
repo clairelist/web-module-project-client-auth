@@ -43,7 +43,7 @@ Each friend object has the format:
 ### Task 2: Project Requirements
 #### Build the login component
 * [X] Use the [mockup provided](./login_mockup.png) to build out a simple login component.
-* [ ] In `App.js`, add a route to allow this component to be displayed when navigating to `/` or `/login`
+* [X] In `App.js`, add a route to allow this component to be displayed when navigating to `/` or `/login`
 * [ ] When submitting your login form, save the token returned to localStorage and redirect to the FriendsList route.
 
 #### Build the friendslist component

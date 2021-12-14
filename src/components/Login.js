@@ -35,7 +35,7 @@ const Login=(props)=>{ //props will be used later when we start doing authentiky
             <input 
             name='username'
             type='text'
-            value={state}
+            value={state.username}
             onChange={onChange}
             />
             </label>
@@ -45,7 +45,7 @@ const Login=(props)=>{ //props will be used later when we start doing authentiky
             <input 
             name='password'
             type='password'
-            value={state}
+            value={state.password}
             onChange={onChange}
             />
             </label>
