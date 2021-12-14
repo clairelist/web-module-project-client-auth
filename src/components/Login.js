@@ -5,7 +5,7 @@ import React, {useState} from 'react';
 
 //PSEUD EXPORT SECTION 
 //somewhat 'logic', but since this is the default export...
-export default Login=(props)=>{ //props will be used later when we start doing authentiky
+const Login=(props)=>{ //props will be used later when we start doing authentiky
     const initialState={
         username: '',
         password: ''
@@ -54,3 +54,5 @@ export default Login=(props)=>{ //props will be used later when we start doing a
     </div>
     );
 }
+
+export default Login;
