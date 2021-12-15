@@ -3,15 +3,17 @@
 
 import React, {useState} from 'react';
 
-//PSEUD EXPORT SECTION 
-//somewhat 'logic', but since this is the default export...
+//LOGIC SECTION
 const Login=(props)=>{ //props will be used later when we start doing authentiky
+    //DATA SECTION
     const initialState={
         username: '',
         password: ''
     }
 
     const [state,setState] = useState(initialState);
+
+    //LOGIC SECTION
 
     const onChange=(event)=>{
         setState({
@@ -24,6 +26,8 @@ const Login=(props)=>{ //props will be used later when we start doing authentiky
         event.preventDefault();
         console.log(state); //first, we must make sure we are passing correct data to state!
     }
+
+    //RETURN SECTION
 
     return (
     <div className='login'>
@@ -49,10 +53,10 @@ const Login=(props)=>{ //props will be used later when we start doing authentiky
             onChange={onChange}
             />
             </label>
-            <button onClick={onSubmit}/>
+            <button onClick={onSubmit}>CLICKA-ME to LOG-IN!</button>
         </form>
     </div>
     );
 }
-
+//RETURN SECTION
 export default Login;
